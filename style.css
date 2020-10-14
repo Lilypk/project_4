@@ -13,6 +13,10 @@
     display: inline-block;
     cursor: pointer;
 }
+.panel:hover {
+    box-shadow: inset 0px 0px 0px 3px silver;
+    box-sizing: border-box;
+}
 .left-bottom-panel {
     border-bottom-left-radius: 200px;
      background-color: yellow;
@@ -29,9 +33,10 @@
     border-top-right-radius: 200px;
     background-color: blue;
 }
-.flashPanel {
+.active {
     background-color: white;
 }
+
 .start-button {
      display: inline-block; 
     display: flex;
