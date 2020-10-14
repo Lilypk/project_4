@@ -13,13 +13,6 @@
     display: inline-block;
     cursor: pointer;
 }
-/* .panel:hover {
-    
-
-} */
-/* .flashPanel {
-    background-color: white;
-} */
 .left-bottom-panel {
     border-bottom-left-radius: 200px;
      background-color: yellow;
@@ -36,8 +29,11 @@
     border-top-right-radius: 200px;
     background-color: blue;
 }
+.flashPanel {
+    background-color: white;
+}
 .start-button {
-    /* display: inline-block; */
+     display: inline-block; 
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -48,7 +44,7 @@
     margin: -75px 84px 0px 104px;
     top: 250px;
     text-align: center;
-    color: white;
+    color: white; 
 }
 .simon {
     margin-top: 50px;
@@ -59,8 +55,12 @@
     width: 50px;
    
 }
+.level {
+    width: 60px;
+    height: 30px;
+}
 .turn {
-    margin-top: 60px;
+    margin-top: 6px;
     width: 80px;
 }
 
