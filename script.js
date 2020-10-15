@@ -7,6 +7,15 @@ let rightBottomPanel = document.querySelector('.right-bottom-panel')
 // let level = document.querySelector('.level')
 // let panel = document.querySelector('.panel')
 
+//start board sequence
+// function startGame() {
+//     let i=0
+//     let start = document.querySelector('.start')
+//     start.addEventListener('click', function () {
+//        level.innerText = (i+=1)
+//     })
+// }
+// startGame()
 
 const getRandomPanel = () => {
 
@@ -71,47 +80,6 @@ startFlashing()
 
 
 
-//start board sequence
-// function startGame() {
-//     let i=0
-//     let start = document.querySelector('.start')
-//     start.addEventListener('click', function () {
-//        level.innerText = (i+=1)
-//     })
-// }
-// startGame()
-
-
-
-// // simon seq 
-// function startSequence(sequence) {
-//     console.log(level)
-
-//     setInterval(function() {
-//         let panels= document.querySelectorAll('.panel')
-//         for (let i=0; i < panels.length; i++) {
-//              panels[i].classList.toggle('flashPanel')
-//         }
-
-
-//     }, 1000)
-
-// }
-
-// startSequence()
-
-// // generate random panel
-// function getRandomPanel() {
-//     let randomPanel = Math.floor(Math.random() * 4) 
-//     console.log(simonSeq[randomPanel])
-//     return simonSeq[randomPanel]
-//  }
-//  getRandomPanel()
-
-
-
-
-// // user replicates sequence
 
 
 
