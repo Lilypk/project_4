@@ -13,5 +13,4 @@ My variables are the four panels. GetRandomPanel is a function for getting a ran
 
 ## Authors 
 
-Lilyklopcic@gmail.com
-Lilypk
+
