@@ -13,8 +13,10 @@ function startGame() {
     let start = document.querySelector('.start')
     start.addEventListener('click', function () {
        level.innerText = (i+=1)
-       
+       startFlashing()
+       start.style.display = 'none'
     })
+
 }
 startGame()
 //function to get a random panel
@@ -75,7 +77,7 @@ const startFlashing = async () => {
     }
     canClick = true
 }
-startFlashing()
+
 
 
 
