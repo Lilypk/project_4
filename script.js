@@ -5,9 +5,14 @@ let leftBottomPanel = document.querySelector('.left-bottom-panel')
 let rightBottomPanel = document.querySelector('.right-bottom-panel')
 let level = document.querySelector('.level')
 let panel = document.querySelector('.panel')
-let sound = document.querySelector('#sound')
-
-//start board sequence
+let sound = {
+    leftTopPanel: new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3'), 
+    rightTopPanel: new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3'), 
+    leftBottomPanel: new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3'), 
+    rightBottomPanel: new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3')
+  }
+  
+//start the game sequence
 function startGame() {
     let i=0
     let start = document.querySelector('.start')
@@ -26,6 +31,7 @@ function getRandomPanel() {
 }
 
 //starts off the sequence with a random panel
+//have an array that keeps track of what is guessed 
 const sequence = [getRandomPanel()]
 let sequenceToGuess = [...sequence]
 //loops through the sequence & has each panel on a timer
@@ -47,8 +53,8 @@ function flash(panel) {
 }
 
 let canClick = false
-//callback function to check if the panel clicked was correct then remove it from the sequence.
-//check if you're done with the current round. 
+//function to check if the panel clicked was correct then remove it from the sequence
+//check if you're done with the current round
 function panelClicked(panelClicked) {
     if (!canClick) return
     const expectedPanel = sequenceToGuess.shift()
@@ -64,6 +70,7 @@ function panelClicked(panelClicked) {
         alert('game over')
     }
 }
+
 //loops through the current sequence, flashes each panel one by one. 
 const startFlashing = async () => {
     canClick = false

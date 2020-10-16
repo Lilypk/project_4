@@ -60,14 +60,10 @@ body {
     font-size: 30px;
 }
 .start {
-    margin: 15px 0px -37px 74px;
+    margin: 15px 0px -40px 74px;
     width: 50px;
-   
 }
-.level {
-    width: 60px;
-    height: 30px;
-}
+
 .turn {
     margin-top: 6px;
     width: 80px;
@@ -76,7 +72,6 @@ body {
     color: white;
     font-size: 20px;
     padding-top: 60px;
-    
 }
 
 
