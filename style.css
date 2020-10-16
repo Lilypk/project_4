@@ -40,7 +40,6 @@ body {
 .active {
     background-color: white;
 }
-
 .start-button {
     display: inline-block; 
     display: flex;
@@ -63,7 +62,6 @@ body {
     margin: 15px 0px -40px 74px;
     width: 50px;
 }
-
 .turn {
     margin-top: 6px;
     width: 80px;
