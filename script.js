@@ -6,6 +6,7 @@ let rightBottomPanel = document.querySelector('.right-bottom-panel')
 let level = document.querySelector('.level')
 let panel = document.querySelector('.panel')
 let sound = document.querySelector('#sound')
+
 //start board sequence
 function startGame() {
     let i=0
@@ -39,6 +40,7 @@ const flash = panel => {
             panel.className = panel.className.replace(
                 ' active',
                 ''
+           
             )
             setTimeout(() => {
     resolve()
