@@ -16,29 +16,24 @@ function startGame() {
        startFlashing()
        start.style.display = 'none'
     })
-
 }
 startGame()
-//function to get a random panel
-const getRandomPanel = () => {
 
-    const panels = [
-        leftTopPanel,
-        rightTopPanel,
-        rightBottomPanel,
-        leftBottomPanel
-    ]
+//function to get a random panel
+function getRandomPanel() {
+    const panels = [leftTopPanel, rightTopPanel, rightBottomPanel, leftBottomPanel]
     return panels[parseInt(Math.random() * panels.length)]
 }
 
 //starts off the sequence with a random panel
 const sequence = [getRandomPanel()]
 let sequenceToGuess = [...sequence]
-//loops through the sequence & has each panel on a timer. Add the class active then remove it. 
-const flash = panel => {
+//loops through the sequence & has each panel on a timer
+//Add the class active then remove it
+function flash(panel) {
     return new Promise((resolve, reject) => {
         panel.className += ' active'
-        setTimeout(() => {
+       setTimeout(() => {
             panel.className = panel.className.replace(
                 ' active',
                 ''
@@ -54,7 +49,7 @@ const flash = panel => {
 let canClick = false
 //callback function to check if the panel clicked was correct then remove it from the sequence.
 //check if you're done with the current round. 
-const panelClicked = panelClicked => {
+function panelClicked(panelClicked) {
     if (!canClick) return
     const expectedPanel = sequenceToGuess.shift()
     if (expectedPanel === panelClicked) {
