@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    font-family: caveat;
+    font-size: 30px;
 }
 .container {
     width: 100%;
@@ -21,26 +23,26 @@ body {
 }
 .left-bottom-panel {
     border-bottom-left-radius: 200px;
-     background-color: yellow;
+    background-color: #FF8426;
 }
 .right-bottom-panel {
     border-bottom-right-radius: 200px;
-    background-color: green;
+    background-color: #F212BB;
 }
 .left-top-panel {
     border-top-left-radius: 200px;
-    background-color: red;
+    background-color: #86144A;
 }
 .right-top-panel {
     border-top-right-radius: 200px;
-    background-color: blue;
+    background-color: #FF4136;
 }
 .active {
     background-color: white;
 }
 
 .start-button {
-     display: inline-block; 
+    display: inline-block; 
     display: flex;
     flex-direction: column;
     position: absolute;
